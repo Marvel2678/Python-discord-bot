@@ -1,0 +1,652 @@
+[
+    {
+        "label": "nextcord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "get",
+        "importPath": "nextcord.utils",
+        "description": "nextcord.utils",
+        "isExtraImport": true,
+        "detail": "nextcord.utils",
+        "documentation": {}
+    },
+    {
+        "label": "has_permissions",
+        "importPath": "nextcord.ext.commands",
+        "description": "nextcord.ext.commands",
+        "isExtraImport": true,
+        "detail": "nextcord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "MissingPermissions",
+        "importPath": "nextcord.ext.commands",
+        "description": "nextcord.ext.commands",
+        "isExtraImport": true,
+        "detail": "nextcord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "has_permissions",
+        "importPath": "nextcord.ext.commands",
+        "description": "nextcord.ext.commands",
+        "isExtraImport": true,
+        "detail": "nextcord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "MissingPermissions",
+        "importPath": "nextcord.ext.commands",
+        "description": "nextcord.ext.commands",
+        "isExtraImport": true,
+        "detail": "nextcord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "importPath": "connect",
+        "description": "connect",
+        "isExtraImport": true,
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "importPath": "connect",
+        "description": "connect",
+        "isExtraImport": true,
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "discord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "discord",
+        "description": "discord",
+        "detail": "discord",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "has_permissions",
+        "importPath": "discord.ext.commands",
+        "description": "discord.ext.commands",
+        "isExtraImport": true,
+        "detail": "discord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "MissingPermissions",
+        "importPath": "discord.ext.commands",
+        "description": "discord.ext.commands",
+        "isExtraImport": true,
+        "detail": "discord.ext.commands",
+        "documentation": {}
+    },
+    {
+        "label": "UserCommands",
+        "kind": 6,
+        "importPath": "cogs.Admin",
+        "description": "cogs.Admin",
+        "peekOfCode": "class UserCommands(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    async def commandsCommand(self, ctx):\n        listModerator = {\n            \"kick\": \"Its kicking other member from this server\",\n            \"ban\": \"Its banning member\",\n        }\n        listUser = {",
+        "detail": "cogs.Admin",
+        "documentation": {}
+    },
+    {
+        "label": "printingAllCommands",
+        "kind": 2,
+        "importPath": "cogs.Admin",
+        "description": "cogs.Admin",
+        "peekOfCode": "def printingAllCommands(command_list: dict):\n    result = \"\"\n    index = 0\n    for key, value in command_list.items():\n        index += 1\n        result += f\"{index}. **{key}**: {value}\\n\"\n    return result\nclass UserCommands(commands.Cog):\n    def __init__(self, client):\n        self.client = client",
+        "detail": "cogs.Admin",
+        "documentation": {}
+    },
+    {
+        "label": "DB",
+        "kind": 6,
+        "importPath": "cogs.DB",
+        "description": "cogs.DB",
+        "peekOfCode": "class DB(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    load_dotenv(\"../\")\n    serverId = int(os.getenv(\"SERVER_ID\"))\n    testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\n    @nextcord.slash_command(name=\"store_sheet\", description=\"Store important data to database\", guild_ids=[serverId, testServerId])\n    async def store_sheet(self, interaction: Interaction, role: nextcord.Role, sheet: str):\n        guild_id = interaction.guild.id\n        try:",
+        "detail": "cogs.DB",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.DB",
+        "description": "cogs.DB",
+        "peekOfCode": "def setup(client):\n    client.add_cog(DB(client))",
+        "detail": "cogs.DB",
+        "documentation": {}
+    },
+    {
+        "label": "ExampleCog",
+        "kind": 6,
+        "importPath": "cogs.Example",
+        "description": "cogs.Example",
+        "peekOfCode": "class ExampleCog(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"hello\", description=\"Say hello\", guild_ids=[1141070071616245940])\n    async def hello(self, interaction: Interaction):\n        await interaction.response.send_message(\"Hello! 👋\")\n    @nextcord.slash_command(name=\"ping\", description=\"Check bot latency\", guild_ids=[1141070071616245940])\n    async def ping(self, interaction: Interaction):\n        latency = self.client.latency\n        await interaction.response.send_message(f\"Pong! Latency: {latency*1000:.2f}ms\")",
+        "detail": "cogs.Example",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.Example",
+        "description": "cogs.Example",
+        "peekOfCode": "def setup(client):\n    client.add_cog(ExampleCog(client))",
+        "detail": "cogs.Example",
+        "documentation": {}
+    },
+    {
+        "label": "Fun",
+        "kind": 6,
+        "importPath": "cogs.Fun",
+        "description": "cogs.Fun",
+        "peekOfCode": "class Fun(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.Cog.listener()\n    async def on_message(self, message):\n        if message.author == self.client.user:\n            return\n        if \"old spice\" in message.content: \n            await message.channel.send(\"Did someone say old spice?\")\n            embed = nextcord.Embed(title='')",
+        "detail": "cogs.Fun",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.Fun",
+        "description": "cogs.Fun",
+        "peekOfCode": "def setup(client):\n    client.add_cog(Fun(client))",
+        "detail": "cogs.Fun",
+        "documentation": {}
+    },
+    {
+        "label": "Greetings",
+        "kind": 6,
+        "importPath": "cogs.Greetings",
+        "description": "cogs.Greetings",
+        "peekOfCode": "class Greetings(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    async def hello(self, ctx):\n        await ctx.send(\"Hello! I hope you have a good day!\")\n    @commands.Cog.listener()\n    async def on_member_join(self, ctx, member):\n        try:\n            mysqlCreateTable = f\"\"\"",
+        "detail": "cogs.Greetings",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.Greetings",
+        "description": "cogs.Greetings",
+        "peekOfCode": "def setup(client):\n    client.add_cog(Greetings(client))",
+        "detail": "cogs.Greetings",
+        "documentation": {}
+    },
+    {
+        "label": "LevelSystem",
+        "kind": 6,
+        "importPath": "cogs.LevelSystem",
+        "description": "cogs.LevelSystem",
+        "peekOfCode": "class LevelSystem(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    # testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\n    # @nextcord.slash_command(name=\"update sheet status\", description=\"this command is updating sheet status\", guild_ids=testServerId)\n    # async def updateSheetStatus(self, interaction: Interaction):\n    #     await interaction.response.send_message(\"test\")\ndef setup(client):\n    client.add_cog(LevelSystem(client))",
+        "detail": "cogs.LevelSystem",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.LevelSystem",
+        "description": "cogs.LevelSystem",
+        "peekOfCode": "def setup(client):\n    client.add_cog(LevelSystem(client))",
+        "detail": "cogs.LevelSystem",
+        "documentation": {}
+    },
+    {
+        "label": "Moderator",
+        "kind": 6,
+        "importPath": "cogs.Moderator",
+        "description": "cogs.Moderator",
+        "peekOfCode": "class Moderator(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    @has_permissions(kick_members=True)\n    async def kick(self, ctx, member: nextcord.Member, *, reason=None):\n        try:\n            await member.kick(reason=reason)\n            await ctx.send(f\"User {member.name} has been kicked! Reason: {reason}\")\n        except Exception as e:",
+        "detail": "cogs.Moderator",
+        "documentation": {}
+    },
+    {
+        "label": "RoleButtons",
+        "kind": 6,
+        "importPath": "cogs.UI",
+        "description": "cogs.UI",
+        "peekOfCode": "class RoleButtons(nextcord.ui.View):\n    def __init__(self, guild):\n        super().__init__()\n        self.guild = guild\n    async def add_or_remove_role(self, interaction: Interaction, role_name: str):\n        user = interaction.user\n        role = nextcord.utils.get(self.guild.roles, name=role_name)\n        if role is None:\n            await interaction.response.send_message(f\"Role '{role_name}' not found!\", ephemeral=True)\n            return",
+        "detail": "cogs.UI",
+        "documentation": {}
+    },
+    {
+        "label": "UI",
+        "kind": 6,
+        "importPath": "cogs.UI",
+        "description": "cogs.UI",
+        "peekOfCode": "class UI(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    testServerId = 1251996857593499789\n    @nextcord.slash_command(name=\"button\", description=\"Faza testowa buttonów\", guild_ids=[testServerId])\n    async def button(self, interaction: Interaction):\n        logging.info(\"Slash command /button called.\")\n        view = RoleButtons(interaction.guild)\n        await interaction.response.send_message(\"Choose a role:\", view=view)\ndef setup(client):",
+        "detail": "cogs.UI",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.UI",
+        "description": "cogs.UI",
+        "peekOfCode": "def setup(client):\n    client.add_cog(UI(client))",
+        "detail": "cogs.UI",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "cogs.View",
+        "description": "cogs.View",
+        "peekOfCode": "class View(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    testServerId = 1141070071616245940\n    # @nextcord.slash_command(name=\"show_db\", description=\"View all data in this server\", guild_ids=[testServerId])\n    # async def show_db(self, interaction: Interaction, user: nextcord.Member):\n    #     guild = interaction.guild.id\n    #     try:\n    #         connection = mysql.connector.connect(\n    #             host=\"localhost\",",
+        "detail": "cogs.View",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.View",
+        "description": "cogs.View",
+        "peekOfCode": "def setup(client):\n    client.add_cog(View(client))",
+        "detail": "cogs.View",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "connect",
+        "description": "connect",
+        "peekOfCode": "connection = mysql.connector.connect(\n    host=\"localhost\",\n    user='root',\n    password='',\n    database='maturaBot'\n)",
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "printingAllCommands",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def printingAllCommands(list: dict):\n        command_list = \"\"\n        index = 0\n        for key, value in list.items():\n            index +=1\n            command_list += f\"{index}. **{key}**: {value}\\n\"\n        return command_list\ndef EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = nextcord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "EmbedBuilder",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = nextcord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)\n    embed.set_footer(text=\"All the best to you! Administrators\")\n    return embed",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "testServerId",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\nBOT_TOKEN = os.getenv(\"DISCORD_TOKEN\")\nlogging.basicConfig(level=logging.INFO)\nintents = nextcord.Intents.all()\nclient = commands.Bot(command_prefix='.', intents=intents)\n@client.event\nasync def on_ready():\n    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.listening, name=\"twoich komend\"))\n    logging.info(f'Logged in as {client.user}')\n    logging.info(\"The bot is active now!\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "BOT_TOKEN = os.getenv(\"DISCORD_TOKEN\")\nlogging.basicConfig(level=logging.INFO)\nintents = nextcord.Intents.all()\nclient = commands.Bot(command_prefix='.', intents=intents)\n@client.event\nasync def on_ready():\n    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.listening, name=\"twoich komend\"))\n    logging.info(f'Logged in as {client.user}')\n    logging.info(\"The bot is active now!\")\nasync def load_extensions():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "intents = nextcord.Intents.all()\nclient = commands.Bot(command_prefix='.', intents=intents)\n@client.event\nasync def on_ready():\n    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.listening, name=\"twoich komend\"))\n    logging.info(f'Logged in as {client.user}')\n    logging.info(\"The bot is active now!\")\nasync def load_extensions():\n    try:\n        initial_extensions = [f\"cogs.{filename[:-3]}\" for filename in os.listdir('./cogs') if filename.endswith('.py')]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "client = commands.Bot(command_prefix='.', intents=intents)\n@client.event\nasync def on_ready():\n    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.listening, name=\"twoich komend\"))\n    logging.info(f'Logged in as {client.user}')\n    logging.info(\"The bot is active now!\")\nasync def load_extensions():\n    try:\n        initial_extensions = [f\"cogs.{filename[:-3]}\" for filename in os.listdir('./cogs') if filename.endswith('.py')]\n        for extension in initial_extensions:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "EmbedBuilder",
+        "kind": 2,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "def EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = discord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)\n    embed.set_footer(text=\"All the best to you! Administrators\")\n    return embed\ndef printingAllCommands(list: dict):\n    command_list = \"\"\n    index = 0\n    for key, value in list.items():\n        index +=1",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "printingAllCommands",
+        "kind": 2,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "def printingAllCommands(list: dict):\n    command_list = \"\"\n    index = 0\n    for key, value in list.items():\n        index +=1\n        command_list += f\"{index}. **{key}**: {value}\\n\"\n    return command_list\n# def setField(name, value):\n@client.event\nasync def on_ready():",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.members = True\nintents.message_content = True\nmainColor = 0xFF5733\ndefaultImg = \"https://cdn-icons-png.flaticon.com/512/25/25231.png\"\nbotName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "intents.members",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "intents.members = True\nintents.message_content = True\nmainColor = 0xFF5733\ndefaultImg = \"https://cdn-icons-png.flaticon.com/512/25/25231.png\"\nbotName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "intents.message_content",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "intents.message_content = True\nmainColor = 0xFF5733\ndefaultImg = \"https://cdn-icons-png.flaticon.com/512/25/25231.png\"\nbotName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"\n}",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "mainColor",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "mainColor = 0xFF5733\ndefaultImg = \"https://cdn-icons-png.flaticon.com/512/25/25231.png\"\nbotName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"\n}\nlistUser = {",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "defaultImg",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "defaultImg = \"https://cdn-icons-png.flaticon.com/512/25/25231.png\"\nbotName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"\n}\nlistUser = {\n    \"hello\": \"this is hello command\",",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "botName",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "botName = 'MaturaBot'\nlistModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"\n}\nlistUser = {\n    \"hello\": \"this is hello command\",\n}",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "listModerator",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "listModerator = {\n    # \"hello\": \"this is hello command\",\n    \"kick\": \"Its kicking other member from this server\",\n    \"ban\": \"Its banning member\",\n    # \"embed\": \"Testing command\"\n}\nlistUser = {\n    \"hello\": \"this is hello command\",\n}\nlistTesting = {",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "listUser",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "listUser = {\n    \"hello\": \"this is hello command\",\n}\nlistTesting = {\n    \"embed\": \"Testing command\"\n}\nclient = commands.Bot(command_prefix='!', intents=intents)\ndef EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = discord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "listTesting",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "listTesting = {\n    \"embed\": \"Testing command\"\n}\nclient = commands.Bot(command_prefix='!', intents=intents)\ndef EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = discord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)\n    embed.set_footer(text=\"All the best to you! Administrators\")\n    return embed\ndef printingAllCommands(list: dict):",
+        "detail": "temp",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "temp",
+        "description": "temp",
+        "peekOfCode": "client = commands.Bot(command_prefix='!', intents=intents)\ndef EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = discord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)\n    embed.set_footer(text=\"All the best to you! Administrators\")\n    return embed\ndef printingAllCommands(list: dict):\n    command_list = \"\"\n    index = 0\n    for key, value in list.items():",
+        "detail": "temp",
+        "documentation": {}
+    }
+]
