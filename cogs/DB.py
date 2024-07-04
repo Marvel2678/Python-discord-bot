@@ -7,7 +7,7 @@ from nextcord import Interaction
 import logging
 from dotenv import load_dotenv
 import os
-from connect import connection
+from connect import connectToDatabase
 
 logging.basicConfig(level=logging.INFO)
 
@@ -21,31 +21,34 @@ class DB(commands.Cog):
     
     @nextcord.slash_command(name="store_sheet", description="Store important data to database", guild_ids=[serverId, testServerId])
     async def store_sheet(self, interaction: Interaction, role: nextcord.Role, sheet: str):
-        guild_id = interaction.guild.id
         try:
             mysqlCreateTable = f"""
-            CREATE TABLE IF NOT EXISTS sheets (
-                Id INT(15) NOT NULL AUTO_INCREMENT,
+                CREATE TABLE IF NOT EXISTS sheets (
+                SheetID INT NOT NULL AUTO_INCREMENT,
                 Sheet VARCHAR(255) NOT NULL,
-                Role VARCHAR(255) NOT NULL,
-                PRIMARY KEY(Id)
+                Role_id INT,
+                PRIMARY KEY(SheetID)
             );
             """
+            # FOREIGN KEY (Role_id) REFERENCES roles(RoleID)
+            connection = connectToDatabase()
             cursor = connection.cursor()
             cursor.execute(mysqlCreateTable)
-            print(f"New table DB_{guild_id} has been created successfully!")
+            print(f"New table sheets has been created successfully!")
         except Error as e:
             print(f"Failed to create table in MySQL Database! Reason: {e}")
         finally:
             if connection.is_connected():
-                table = f"DB_{guild_id}"
-                mysqlInsertRow = f"INSERT INTO {table} (User, Arkusz, Status) VALUES (%s, %s, 0);"
-                mysqlInsertRowValues = (str(interaction.user), sheet)
+                mysqlInsertRow = f"INSERT INTO sheets (Sheet, Role_id) VALUES (%s, %s);"
+                searchRoleId = "SELECT RoleID FROM roles WHERE Discord_role_id=%s"
+                cursor.execute(searchRoleId, (role.id,))
+                searched = cursor.fetchone()[0]
+                mysqlInsertRowValues = (str(sheet), searched)
                 cursor.execute(mysqlInsertRow, mysqlInsertRowValues)
                 
                 connection.commit()
                 
-                await interaction.response.send_message("Message has been stored in Database!")
+                await interaction.response.send_message(f"Arkusz {sheet} jest zapisany!")
                 
                 cursor.close()
                 connection.close()
@@ -57,6 +60,7 @@ class DB(commands.Cog):
         guild = interaction.guild.id
         try:
             mysqlGetAllDataFromGuild = f"SELECT * FROM DB_{guild} WHERE User=%s;"
+            connection = connectToDatabase()
             cursor = connection.cursor()
             cursor.execute(mysqlGetAllDataFromGuild, (str(user),))
             results = cursor.fetchall()
@@ -81,6 +85,7 @@ class DB(commands.Cog):
         guild = interaction.guild.id
         try:
             mysqlDataToUpdate = f"SELECT status FROM DB_{guild} WHERE Id=%s;"
+            connection = connectToDatabase()
             cursor = connection.cursor()
             cursor.execute(mysqlDataToUpdate, (id,))
             result = cursor.fetchone()

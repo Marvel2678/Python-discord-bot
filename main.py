@@ -6,6 +6,7 @@ import logging
 from dotenv import load_dotenv
 
 load_dotenv()
+serverId = int(os.getenv("SERVER_ID"))
 testServerId = int(os.getenv("TEST_SERVER_ID"))
 BOT_TOKEN = os.getenv("DISCORD_TOKEN")
 

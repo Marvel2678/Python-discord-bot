@@ -65,6 +65,14 @@
         "documentation": {}
     },
     {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
         "label": "commands",
         "importPath": "nextcord.ext",
         "description": "nextcord.ext",
@@ -226,20 +234,20 @@
         "documentation": {}
     },
     {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -268,7 +276,7 @@
         "documentation": {}
     },
     {
-        "label": "connection",
+        "label": "connectToDatabase",
         "importPath": "connect",
         "description": "connect",
         "isExtraImport": true,
@@ -276,11 +284,83 @@
         "documentation": {}
     },
     {
-        "label": "connection",
+        "label": "connectToDatabase",
         "importPath": "connect",
         "description": "connect",
         "isExtraImport": true,
         "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "connectToDatabase",
+        "importPath": "connect",
+        "description": "connect",
+        "isExtraImport": true,
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "connectToDatabase",
+        "importPath": "connect",
+        "description": "connect",
+        "isExtraImport": true,
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "testServerId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "testServerId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "testServerId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -339,7 +419,7 @@
         "kind": 6,
         "importPath": "cogs.DB",
         "description": "cogs.DB",
-        "peekOfCode": "class DB(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    load_dotenv(\"../\")\n    serverId = int(os.getenv(\"SERVER_ID\"))\n    testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\n    @nextcord.slash_command(name=\"store_sheet\", description=\"Store important data to database\", guild_ids=[serverId, testServerId])\n    async def store_sheet(self, interaction: Interaction, role: nextcord.Role, sheet: str):\n        guild_id = interaction.guild.id\n        try:",
+        "peekOfCode": "class DB(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    load_dotenv(\"../\")\n    serverId = int(os.getenv(\"SERVER_ID\"))\n    testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\n    @nextcord.slash_command(name=\"store_sheet\", description=\"Store important data to database\", guild_ids=[serverId, testServerId])\n    async def store_sheet(self, interaction: Interaction, role: nextcord.Role, sheet: str):\n        try:\n            mysqlCreateTable = f\"\"\"",
         "detail": "cogs.DB",
         "documentation": {}
     },
@@ -357,7 +437,7 @@
         "kind": 6,
         "importPath": "cogs.Example",
         "description": "cogs.Example",
-        "peekOfCode": "class ExampleCog(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"hello\", description=\"Say hello\", guild_ids=[1141070071616245940])\n    async def hello(self, interaction: Interaction):\n        await interaction.response.send_message(\"Hello! 👋\")\n    @nextcord.slash_command(name=\"ping\", description=\"Check bot latency\", guild_ids=[1141070071616245940])\n    async def ping(self, interaction: Interaction):\n        latency = self.client.latency\n        await interaction.response.send_message(f\"Pong! Latency: {latency*1000:.2f}ms\")",
+        "peekOfCode": "class ExampleCog(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"hello\", description=\"Say hello\", guild_ids=[testServerId,serverId])\n    async def hello(self, interaction: Interaction):\n        await interaction.response.send_message(\"Hello! 👋\")\n    @nextcord.slash_command(name=\"ping\", description=\"Check bot latency\", guild_ids=[testServerId,serverId])\n    async def ping(self, interaction: Interaction):\n        latency = self.client.latency\n        await interaction.response.send_message(f\"Pong! Latency: {latency*1000:.2f}ms\")",
         "detail": "cogs.Example",
         "documentation": {}
     },
@@ -393,7 +473,7 @@
         "kind": 6,
         "importPath": "cogs.Greetings",
         "description": "cogs.Greetings",
-        "peekOfCode": "class Greetings(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    async def hello(self, ctx):\n        await ctx.send(\"Hello! I hope you have a good day!\")\n    @commands.Cog.listener()\n    async def on_member_join(self, ctx, member):\n        try:\n            mysqlCreateTable = f\"\"\"",
+        "peekOfCode": "class Greetings(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    async def hello(self, ctx):\n        await ctx.send(\"Hello! I hope you have a good day!\")\n    @commands.Cog.listener()\n    async def on_member_join(self, member):\n        try:\n            mysqlCreateTable = f\"\"\"",
         "detail": "cogs.Greetings",
         "documentation": {}
     },
@@ -411,7 +491,7 @@
         "kind": 6,
         "importPath": "cogs.LevelSystem",
         "description": "cogs.LevelSystem",
-        "peekOfCode": "class LevelSystem(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    # testServerId = int(os.getenv(\"TEST_SERVER_ID\"))\n    # @nextcord.slash_command(name=\"update sheet status\", description=\"this command is updating sheet status\", guild_ids=testServerId)\n    # async def updateSheetStatus(self, interaction: Interaction):\n    #     await interaction.response.send_message(\"test\")\ndef setup(client):\n    client.add_cog(LevelSystem(client))",
+        "peekOfCode": "class LevelSystem(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"show_emblemat\", description=\"This command displays the user's sheets.\", guild_ids=[testServerId, serverId])\n    async def emblemat(self, interaction: Interaction):\n        try:\n            roles = interaction.user.roles\n            embed = nextcord.Embed(title=\"Emblemat Arkuszy\")\n            connection = connectToDatabase()\n            cursor = connection.cursor()",
         "detail": "cogs.LevelSystem",
         "documentation": {}
     },
@@ -447,7 +527,7 @@
         "kind": 6,
         "importPath": "cogs.UI",
         "description": "cogs.UI",
-        "peekOfCode": "class UI(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    testServerId = 1251996857593499789\n    @nextcord.slash_command(name=\"button\", description=\"Faza testowa buttonów\", guild_ids=[testServerId])\n    async def button(self, interaction: Interaction):\n        logging.info(\"Slash command /button called.\")\n        view = RoleButtons(interaction.guild)\n        await interaction.response.send_message(\"Choose a role:\", view=view)\ndef setup(client):",
+        "peekOfCode": "class UI(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"button\", description=\"Faza testowa buttonów\", guild_ids=[testServerId, serverId])\n    async def button(self, interaction: Interaction):\n        logging.info(\"Slash command /button called.\")\n        try:\n            mysqlCreateTableRoles = f\"\"\"\n                CREATE TABLE IF NOT EXISTS roles (\n                RoleID BIGINT NOT NULL AUTO_INCREMENT,",
         "detail": "cogs.UI",
         "documentation": {}
     },
@@ -479,11 +559,11 @@
         "documentation": {}
     },
     {
-        "label": "connection",
-        "kind": 5,
+        "label": "connectToDatabase",
+        "kind": 2,
         "importPath": "connect",
         "description": "connect",
-        "peekOfCode": "connection = mysql.connector.connect(\n    host=\"localhost\",\n    user='root',\n    password='',\n    database='maturaBot'\n)",
+        "peekOfCode": "def connectToDatabase():\n    connection = mysql.connector.connect(\n        host=\"localhost\",\n        user='root',\n        password='',\n        database='maturaBot'\n    )\n    return connection",
         "detail": "connect",
         "documentation": {}
     },
@@ -503,6 +583,15 @@
         "description": "functions",
         "peekOfCode": "def EmbedBuilder(title, description, color, name, icon_url, url:None):\n    embed = nextcord.Embed(title=title, color=color, description=description, url=url)\n    embed.set_author(name=name, icon_url=icon_url)\n    embed.set_footer(text=\"All the best to you! Administrators\")\n    return embed",
         "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "serverId = int(os.getenv(\"SERVER_ID\"))\ntestServerId = int(os.getenv(\"TEST_SERVER_ID\"))\nBOT_TOKEN = os.getenv(\"DISCORD_TOKEN\")\nlogging.basicConfig(level=logging.INFO)\nintents = nextcord.Intents.all()\nclient = commands.Bot(command_prefix='.', intents=intents)\n@client.event\nasync def on_ready():\n    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.listening, name=\"twoich komend\"))\n    logging.info(f'Logged in as {client.user}')",
+        "detail": "main",
         "documentation": {}
     },
     {

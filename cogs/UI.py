@@ -1,8 +1,11 @@
+import mysql.connector
 import nextcord
 from nextcord.ext import commands
 from nextcord import Interaction
 import logging
-
+from mysql.connector import Error
+from main import serverId, testServerId
+from connect import connectToDatabase
 logging.basicConfig(level=logging.INFO)
 
 class RoleButtons(nextcord.ui.View):
@@ -45,11 +48,42 @@ class UI(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    testServerId = 1251996857593499789
-
-    @nextcord.slash_command(name="button", description="Faza testowa buttonów", guild_ids=[testServerId])
+    @nextcord.slash_command(name="button", description="Faza testowa buttonów", guild_ids=[testServerId, serverId])
     async def button(self, interaction: Interaction):
         logging.info("Slash command /button called.")
+        try:
+            mysqlCreateTableRoles = f"""
+                CREATE TABLE IF NOT EXISTS roles (
+                RoleID BIGINT NOT NULL AUTO_INCREMENT,
+                Discord_role_id BIGINT NOT NULL,
+                Role_name VARCHAR(255) NOT NULL,
+                PRIMARY KEY(RoleID)
+                UNIQUE (Discord_role_id)
+            );
+            """
+            connection = connectToDatabase()
+            cursor = connection.cursor()
+            cursor.execute(mysqlCreateTableRoles)
+        except Error as e:
+            print(f"Problem with database: {e}")
+        finally:
+            if connection.is_connected():
+                checkTableExists = "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'maturaBot' AND table_name = 'roles';"
+                cursor.execute(checkTableExists)
+                count = cursor.fetchone()
+                if count == 0:
+                    for role in interaction.guild.roles:
+                        cursor.execute(f"""
+                        INSERT INTO roles (Discord_role_id, Role_name)
+                        VALUES (%s, %s)
+                        """, (role.id, role.name))
+                        connection.commit()
+                        # print(f"Role Id: {role.id}, Role Name: {role.name}")
+                    cursor.close()
+                    connection.close()
+                    # await interaction.response.send_message("Done")
+                    print("Connection has been closed")
+            
         view = RoleButtons(interaction.guild)
         await interaction.response.send_message("Choose a role:", view=view)
 

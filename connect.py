@@ -1,8 +1,9 @@
 import mysql.connector
-
-connection = mysql.connector.connect(
-    host="localhost",
-    user='root',
-    password='',
-    database='maturaBot'
-)
+def connectToDatabase():
+    connection = mysql.connector.connect(
+        host="localhost",
+        user='root',
+        password='',
+        database='maturaBot'
+    )
+    return connection
