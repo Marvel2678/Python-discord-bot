@@ -48,7 +48,7 @@ class DB(commands.Cog):
                 
                 connection.commit()
                 
-                await interaction.response.send_message(f"Arkusz {sheet} jest zapisany!")
+                await interaction.response.send_message(f"Arkusz {sheet} jest zapisany!", ephemeral=True)
                 
                 cursor.close()
                 connection.close()
@@ -82,18 +82,23 @@ class DB(commands.Cog):
 
     @nextcord.slash_command(name="change_stat", description="Change status to the done or no done", guild_ids=[serverId, testServerId])
     async def change_stat(self, interaction: Interaction, id: int):
-        guild = interaction.guild.id
+        user = interaction.user
         try:
-            mysqlDataToUpdate = f"SELECT status FROM DB_{guild} WHERE Id=%s;"
+            selectUserID = "SELECT UserID FROM users WHERE Discord_user_id = %s;"
             connection = connectToDatabase()
             cursor = connection.cursor()
-            cursor.execute(mysqlDataToUpdate, (id,))
+            cursor.execute(selectUserID, (user.id,))
+            userID = cursor.fetchone()[0]
+            selectSheetStatus = "SELECT Status FROM userDone WHERE User_id = %s AND Sheet_id = %s"
+            cursor.execute(selectSheetStatus, (userID, id))
             result = cursor.fetchone()
-            
             if result:
                 actualStatus = 1 if result[0] == 0 else 0
-                mysqlUpdateStatus = f"UPDATE DB_{guild} SET status=%s WHERE Id=%s;"
-                cursor.execute(mysqlUpdateStatus, (actualStatus, id))
+                print(actualStatus)
+                print(userID)
+                print(id)
+                mysqlUpdateStatus = "UPDATE userDone SET status=%s WHERE User_id=%s AND Sheet_id = %s;"
+                cursor.execute(mysqlUpdateStatus, (actualStatus, userID, id))
                 connection.commit()  # Don't forget to commit the transaction
                 await interaction.response.send_message("Status updated successfully!")
             else:

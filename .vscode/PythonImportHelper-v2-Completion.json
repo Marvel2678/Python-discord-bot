@@ -73,7 +73,39 @@
         "documentation": {}
     },
     {
+        "label": "Interaction",
+        "importPath": "nextcord",
+        "description": "nextcord",
+        "isExtraImport": true,
+        "detail": "nextcord",
+        "documentation": {}
+    },
+    {
         "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "nextcord.ext",
+        "description": "nextcord.ext",
+        "isExtraImport": true,
+        "detail": "nextcord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
         "importPath": "nextcord.ext",
         "description": "nextcord.ext",
         "isExtraImport": true,
@@ -308,6 +340,49 @@
         "documentation": {}
     },
     {
+        "label": "connectToDatabase",
+        "importPath": "connect",
+        "description": "connect",
+        "isExtraImport": true,
+        "detail": "connect",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "aioschedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aioschedule",
+        "description": "aioschedule",
+        "detail": "aioschedule",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "html.parser",
+        "description": "html.parser",
+        "isExtraImport": true,
+        "detail": "html.parser",
+        "documentation": {}
+    },
+    {
         "label": "serverId",
         "importPath": "main",
         "description": "main",
@@ -348,6 +423,22 @@
         "documentation": {}
     },
     {
+        "label": "testServerId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "serverId",
         "importPath": "main",
         "description": "main",
@@ -361,6 +452,39 @@
         "description": "main",
         "isExtraImport": true,
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "serverId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "testServerId",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pylab",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -433,6 +557,33 @@
         "documentation": {}
     },
     {
+        "label": "HTMLTextExtractor",
+        "kind": 6,
+        "importPath": "cogs.DailyChallenge",
+        "description": "cogs.DailyChallenge",
+        "peekOfCode": "class HTMLTextExtractor(HTMLParser):\n    def __init__(self):\n        super().__init__()\n        self.text = []\n    def handle_data(self, data):\n        self.text.append(data)\n    def get_text(self):\n        return ''.join(self.text)\nclass DailyChallenge(commands.Cog):\n    def __init__(self, client):",
+        "detail": "cogs.DailyChallenge",
+        "documentation": {}
+    },
+    {
+        "label": "DailyChallenge",
+        "kind": 6,
+        "importPath": "cogs.DailyChallenge",
+        "description": "cogs.DailyChallenge",
+        "peekOfCode": "class DailyChallenge(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n        self.daily_task.start()\n    @nextcord.slash_command(name=\"daily\", description=\"Fetch today's LeetCode daily challenge.\", guild_ids=[serverId, testServerId])\n    async def get_leetcode_daily_challenge(self, interaction: nextcord.Interaction):\n        url = 'https://leetcode.com/graphql'\n        query = '''\n        {\n            activeDailyCodingChallengeQuestion {",
+        "detail": "cogs.DailyChallenge",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.DailyChallenge",
+        "description": "cogs.DailyChallenge",
+        "peekOfCode": "def setup(client):\n    client.add_cog(DailyChallenge(client))",
+        "detail": "cogs.DailyChallenge",
+        "documentation": {}
+    },
+    {
         "label": "ExampleCog",
         "kind": 6,
         "importPath": "cogs.Example",
@@ -491,7 +642,7 @@
         "kind": 6,
         "importPath": "cogs.LevelSystem",
         "description": "cogs.LevelSystem",
-        "peekOfCode": "class LevelSystem(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"show_emblemat\", description=\"This command displays the user's sheets.\", guild_ids=[testServerId, serverId])\n    async def emblemat(self, interaction: Interaction):\n        try:\n            roles = interaction.user.roles\n            embed = nextcord.Embed(title=\"Emblemat Arkuszy\")\n            connection = connectToDatabase()\n            cursor = connection.cursor()",
+        "peekOfCode": "class LevelSystem(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"show_emblemat\", description=\"This command displays the user's sheets.\", guild_ids=[testServerId, serverId])\n    async def emblemat(self, interaction: Interaction):\n        try:\n            roles = interaction.user.roles\n            embed = nextcord.Embed(\n                title=\"Emblemat Arkuszy\",\n                description=f\"Arkusze przypisane do użytkownika {interaction.user.mention}\",",
         "detail": "cogs.LevelSystem",
         "documentation": {}
     },
@@ -511,6 +662,24 @@
         "description": "cogs.Moderator",
         "peekOfCode": "class Moderator(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @commands.command()\n    @has_permissions(kick_members=True)\n    async def kick(self, ctx, member: nextcord.Member, *, reason=None):\n        try:\n            await member.kick(reason=reason)\n            await ctx.send(f\"User {member.name} has been kicked! Reason: {reason}\")\n        except Exception as e:",
         "detail": "cogs.Moderator",
+        "documentation": {}
+    },
+    {
+        "label": "StatsCog",
+        "kind": 6,
+        "importPath": "cogs.Stats",
+        "description": "cogs.Stats",
+        "peekOfCode": "class StatsCog(commands.Cog):\n    def __init__(self, client):\n        self.client = client\n    @nextcord.slash_command(name=\"chart\", description=\"Generates a pie chart\", guild_ids=[testServerId, serverId])\n    async def piechart(self, interaction: Interaction):\n        user = interaction.user\n        connection = connectToDatabase()\n        cursor = connection.cursor()\n        selectUserID = \"SELECT UserID FROM users WHERE Discord_user_id = %s\"\n        cursor.execute(selectUserID, (user.id,))",
+        "detail": "cogs.Stats",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "kind": 2,
+        "importPath": "cogs.Stats",
+        "description": "cogs.Stats",
+        "peekOfCode": "def setup(client):\n    client.add_cog(StatsCog(client))",
+        "detail": "cogs.Stats",
         "documentation": {}
     },
     {
