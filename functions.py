@@ -12,4 +12,3 @@ def EmbedBuilder(title, description, color, name, icon_url, url:None):
     embed.set_author(name=name, icon_url=icon_url)
     embed.set_footer(text="All the best to you! Administrators")
     return embed
-

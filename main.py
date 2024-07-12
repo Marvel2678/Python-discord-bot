@@ -10,6 +10,7 @@ serverId = int(os.getenv("SERVER_ID"))
 testServerId = int(os.getenv("TEST_SERVER_ID"))
 BOT_TOKEN = os.getenv("DISCORD_TOKEN")
 
+
 logging.basicConfig(level=logging.INFO)
 intents = nextcord.Intents.all()
 
@@ -36,4 +37,5 @@ async def on_connect():
     await load_extensions()
 
 if __name__ == "__main__":
+    print(BOT_TOKEN)
     client.run(BOT_TOKEN)

@@ -1,8 +1,11 @@
+import datetime
 import requests
 import nextcord
 from nextcord.ext import commands, tasks
 import aioschedule as schedule
 import asyncio
+import pytz
+from datetime import datetime
 from html.parser import HTMLParser
 from main import serverId, testServerId
 
@@ -74,8 +77,14 @@ class DailyChallenge(commands.Cog):
         await interaction.response.send_message(embed=embed_en)
 
     @commands.Cog.listener()
+    async def on_ready(self):
+        print(f'Logged in as {self.client.user}')
     async def daily_event(self):
-        channel = self.client.get_channel(1260951026580852738)
+        print("Running daily_event")  # Debug log
+        channel = self.client.get_channel(1260951026580852738)  # Upewnij się, że masz poprawny ID kanału
+        if channel is None:
+            print("Channel not found!")  # Debug log
+            return
         url = 'https://leetcode.com/graphql'
         query = '''
         {
@@ -113,15 +122,22 @@ class DailyChallenge(commands.Cog):
         embed_en.add_field(name="Link", value=link, inline=False)
 
         await channel.send(embed=embed_en)
-
+        
+    def get_local_time(self, timezone):
+        utc_now = datetime.utcnow().replace(tzinfo=pytz.utc)
+        local_time = utc_now.astimezone(pytz.timezone(timezone))
+        return local_time.strftime("%H:%M")
+    
     @tasks.loop(seconds=60)  # This loop runs every 60 seconds
     async def daily_task(self):
-        current_time = nextcord.utils.utcnow().strftime("%H:%M")
-        if current_time == "14:30":
+        current_time = self.get_local_time("Europe/Warsaw")
+        print(f"Current time: {current_time}")  # Debug log
+        if current_time == "9:00":
             await self.daily_event()
 
     @daily_task.before_loop
     async def before_daily_task(self):
+        print("Triggering daily_event")  # Debug log
         await self.client.wait_until_ready()
 
 def setup(client):
