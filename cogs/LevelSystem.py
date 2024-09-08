@@ -144,7 +144,8 @@ class LevelSystem(commands.Cog):
                 
                 embed = nextcord.Embed(title=f"Twój level {user.name}", description=f"Jest to level dla ciebie i roli {role.name}", color=0x00ff00)
                 for query in allQueries:
-                    embed.add_field(name=query[0], value=query[1], inline=True)
+                    value = ":x:" if query[1] == 0 else ":white_check_mark:"
+                    embed.add_field(name=query[0], value=value, inline=False)
                 await interaction.response.send_message(embed=embed)
                 if cursor:
                     cursor.close()

@@ -5,7 +5,7 @@ from nextcord import Interaction
 import logging
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path=".env")
 serverId = int(os.getenv("SERVER_ID"))
 testServerId = int(os.getenv("TEST_SERVER_ID"))
 BOT_TOKEN = os.getenv("DISCORD_TOKEN")

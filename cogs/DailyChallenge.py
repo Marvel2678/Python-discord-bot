@@ -128,11 +128,11 @@ class DailyChallenge(commands.Cog):
         local_time = utc_now.astimezone(pytz.timezone(timezone))
         return local_time.strftime("%H:%M")
     
-    @tasks.loop(seconds=60)  # This loop runs every 60 seconds
+    @tasks.loop(seconds=60)
     async def daily_task(self):
         current_time = self.get_local_time("Europe/Warsaw")
         print(f"Current time: {current_time}")  # Debug log
-        if current_time == "9:00":
+        if current_time == "09:00":
             await self.daily_event()
 
     @daily_task.before_loop

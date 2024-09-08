@@ -21,7 +21,7 @@ class Greetings(commands.Cog):
                 UserID BIGINT NOT NULL AUTO_INCREMENT,
                 Discord_user_id BIGINT NOT NULL,
                 User_name VARCHAR(255) NOT NULL,
-                PRIMARY KEY(UserID)
+                PRIMARY KEY(UserID),
                 UNIQUE (Discord_user_id)
                 );
                 """
